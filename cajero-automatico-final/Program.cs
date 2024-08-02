@@ -1,7 +1,5 @@
-﻿static void CambiarClave(int cuentaRegistro)
+﻿static void ConsultarSaldo(int cuentaRegistro)
 {
-    Console.WriteLine("Ingrese su nueva clave:");
-    string nuevaClave = Console.ReadLine();
-    cuentas[cuentaRegistro, 1] = (nuevaClave); // actualizar la contraseña 
-    Console.WriteLine("Clave cambiada correctamente.");
+    double saldo = double.Parse(cuentas[cuentaRegistro, 2]);
+    Console.WriteLine($"Su saldo actual es: ${saldo}");
 }
