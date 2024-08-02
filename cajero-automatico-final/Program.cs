@@ -1,12 +1,4 @@
-﻿static void MostrarMovimientos(int cuentaRegistro)
+﻿static string[] ObtenerMovimientos(string cuenta)
 {
-    string cuenta = cuentas[cuentaRegistro, 0];
-    string[] movimientos = ObtenerMovimientos(cuenta);
-
-    Console.WriteLine("Movimientos recientes:");
-
-    foreach (string movimiento in movimientos)
-    {
-        Console.WriteLine(movimiento);
-    }
+    return File.ReadAllLines($"{cuenta}_movimientos.txt");
 }
