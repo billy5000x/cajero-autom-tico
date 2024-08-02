@@ -3,7 +3,7 @@
     int opcion;
     while (!int.TryParse(Console.ReadLine(), out opcion))
     {
-        Console.WriteLine("Opción invalida. por favor, seleccione una opción valida.");
+        Console.WriteLine("opción invalida. por favor, seleccione una opción valida.");
     }
     return opcion;
 }
