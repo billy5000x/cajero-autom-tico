@@ -1,9 +1,12 @@
-﻿static int LeerOpcion()
+﻿static void MostrarMovimientos(int cuentaRegistro)
 {
-    int opcion;
-    while (!int.TryParse(Console.ReadLine(), out opcion))
+    string cuenta = cuentas[cuentaRegistro, 0];
+    string[] movimientos = ObtenerMovimientos(cuenta);
+
+    Console.WriteLine("Movimientos recientes:");
+
+    foreach (string movimiento in movimientos)
     {
-        Console.WriteLine("opción invalida. por favor, seleccione una opción valida.");
+        Console.WriteLine(movimiento);
     }
-    return opcion;
 }
