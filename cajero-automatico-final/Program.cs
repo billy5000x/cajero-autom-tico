@@ -1,11 +1,12 @@
-﻿static int BuscarCuenta(string cuenta, string contraseña)
+﻿static void MostrarMenu()
 {
-    for (int i = 0; i < cuentas.GetLength(0); i++)
-    {
-        if (cuentas[i, 0] == cuenta && VerificarContraseña(contraseña, cuentas[i, 1]))
-        {
-            return i;
-        }
-    }
-    return -1;
+    Console.WriteLine("\nMenú de opciones:");
+    Console.WriteLine("1. Retiro");
+    Console.WriteLine("2. Movimientos");
+    Console.WriteLine("3. Deposito");
+    Console.WriteLine("4. Cambio de claves");
+    Console.WriteLine("5. Consulta de saldo");
+    Console.WriteLine("6. Transferencia");
+    Console.WriteLine("7. salir ");
+    Console.WriteLine("Seleccione una opción");
 }
