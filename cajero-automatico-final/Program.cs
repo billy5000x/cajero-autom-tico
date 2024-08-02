@@ -1,11 +1,4 @@
-﻿static int BuscarCuentaDestino(string cuentaDestino)
+﻿static bool VerificarContraseña(string ContraseñaIngresada, string ContraseñaAlmacenada)
 {
-    for (int i = 0; i < cuentas.GetLength(0); i++)
-    {
-        if (cuentas[i, 0] == cuentaDestino)
-        {
-            return i;
-        }
-    }
-    return -1;
+    return ContraseñaIngresada == ContraseñaAlmacenada;
 }
